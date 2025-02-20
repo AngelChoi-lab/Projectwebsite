@@ -2,27 +2,22 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>Project Video Showcase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video showcase</title>
 </head>
 <body>
-    <h1>Project Video Showcase</h1>
+    <h1>video showcase</h1>
 
-    <!-- 第一段视频 -->
-    <video width="600" controls>
-        <source src="~/videos/ai walker.mp4" type="video/mp4">
-        您的浏览器不支持视频播放。
-    </video>
+    <!-- 嵌入 YouTube 视频 -->
+    <iframe width="800" height="450"
+            src="https://youtu.be/PUvxHzRoGJg"
+            title="YouTube video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
 
     <br>
-
-    <!-- 可添加多个视频 -->
-    <!--video width="600" controls>
-        <source src="~/videos/new_video.mp4" type="video/mp4">
-        您的浏览器不支持视频播放。
-    </!--video>
-
-    <br-->
-
-    <a asp-controller="Home" asp-action="Index">back to mainpage</a>
+    <a href="index.html">返回主页</a>
 </body>
 </html>
