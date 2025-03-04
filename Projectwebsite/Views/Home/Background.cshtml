@@ -2,15 +2,135 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>project background introduce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chronicles of Etheria</title>
+    <style>
+        /* 全局样式 - 星空背景 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+            background: linear-gradient(45deg, #0d1b2a, #1b263b, #415a77, #778da9);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
+
+        /* 背景动画 */
+        @@keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 星空粒子特效 */
+        .stars {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/star-1837306_1280.jpg') repeat;
+            opacity: 0.2;
+            animation: starsMove 30s linear infinite;
+        }
+
+        @@keyframes starsMove {
+            from { background-position: 0 0; }
+            to { background-position: -1000px 1000px; }
+        }
+
+        /* 标题动态渐变 */
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, #f0f, #ff0, #0ff, #f0f);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: glow 2s infinite alternate;
+        }
+
+        @@keyframes glow {
+            from { text-shadow: 0 0 5px #fff; }
+            to { text-shadow: 0 0 20px #ff0, 0 0 30px #f0f; }
+        }
+
+        /* 内容区 */
+        .container {
+            padding: 50px 10%;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @@keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 角色介绍 */
+        .character {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            transition: all 0.5s ease;
+        }
+
+        .character:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+        }
+
+        /* 返回主页按钮 */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(1.1);
+            }
+    </style>
 </head>
 <body>
-    <h1>project background introduce</h1>
-    <p>here is the stuff</p>
-    <video width="600" controls>
-        <source src="~/videos/background.mp4" type="video/mp4">
-        您的浏览器不支持视频播放。
-    </video>
-    <a asp-controller="Home" asp-action="Index">back to mainpage</a>
+
+    <!-- 星空背景 -->
+    <div class="stars"></div>
+
+    <h1>The Chronicles of Etheria</h1>
+
+    <div class="container">
+        <p>
+            In the ancient world of Etheria, where the skies shimmered with ethereal light and the land pulsed with arcane energy,
+            five legendary beings shaped the destiny of all existence.
+        </p>
+
+        <div class="character"><strong>CHL, the Weaver of Shadows:</strong> Master of illusions and secrets, bending reality to his will.</div>
+        <div class="character"><strong>WXY, the Stormcaller:</strong> Summons the fury of the heavens, commanding lightning and thunder.</div>
+        <div class="character"><strong>WDS, the Architect of Time:</strong> Guardian of history, ensuring the balance between past and future.</div>
+        <div class="character"><strong>YJ, the Flameborn Sage:</strong> Keeper of the eternal fire, forging weapons of unimaginable power.</div>
+        <div class="character"><strong>LLX, the Celestial Wanderer:</strong> A traveler between dimensions, unlocking cosmic mysteries.</div>
+
+        <p>
+            A great calamity looms over Etheria. Only by uniting their powers can they restore harmony, but as the prophecy foretells:
+            <i>“When the five awaken, the veil shall break… but will salvation come, or the end of all things?”</i>
+        </p>
+
+       <a class="btn" href="@Url.Action("Index", "Home")">🏠 Home</a>
+
+
+    </div>
+
 </body>
 </html>
