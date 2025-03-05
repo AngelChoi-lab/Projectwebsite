@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> - Projectwebsite</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css?v=3wL5T0eZ8VPiW4BfCCM8jGvp7Q3vxge5s76ENrD67oY" />
+    <link rel="stylesheet" href="/Projectwebsite.styles.css?v=Lr1i0UmMmuncBsWdpetkCOYX_E3XqI215hAzfDXXfUw" />
+</head>
+<body>
+    <header b-9ze44yt5fo>
+        <nav b-9ze44yt5fo class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div b-9ze44yt5fo class="container-fluid">
+                <a class="navbar-brand" href="/">Projectwebsite</a>
+                <button b-9ze44yt5fo class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span b-9ze44yt5fo class="navbar-toggler-icon"></span>
+                </button>
+                <div b-9ze44yt5fo class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul b-9ze44yt5fo class="navbar-nav flex-grow-1">
+                        <li b-9ze44yt5fo class="nav-item">
+                            <a class="nav-link text-dark" href="/">Home</a>
+                        </li>
+                        <li b-9ze44yt5fo class="nav-item">
+                            <a class="nav-link text-dark" href="/Home/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div b-9ze44yt5fo class="container">
+        <main b-9ze44yt5fo role="main" class="pb-3">
+            <!DOCTYPE html>
+            <html lang="zh">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Membership of Etheria</title>
+                <style>
+                    /* 全局背景 */
+                    body {
+                        margin: 0;
+                        padding: 0;
+                        font-family: "Arial", sans-serif;
+                        color: #fff;
+                        text-align: center;
+                        overflow: hidden;
+                        background: linear-gradient(45deg, #0d1b2a, #1b263b, #415a77, #778da9);
+                        background-size: 400% 400%;
+                        animation: gradientBG 10s ease infinite;
+                    }
+
+                    /* 背景动画 */
+                    @keyframes gradientBG {
+                        0% {
+                            background-position: 0% 50%;
+                        }
+
+                        50% {
+                            background-position: 100% 50%;
+                        }
+
+                        100% {
+                            background-position: 0% 50%;
+                        }
+                    }
+
+                    /* 星空粒子特效 */
+                    .stars {
+                        position: fixed;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/star-1837306_1280.jpg') repeat;
+                        opacity: 0.2;
+                        animation: starsMove 30s linear infinite;
+                    }
+
+                    @keyframes starsMove {
+                        from {
+                            background-position: 0 0;
+                        }
+
+                        to {
+                            background-position: -1000px 1000px;
+                        }
+                    }
+
+                    /* 炫彩标题 */
+                    h1 {
+                        font-size: 3rem;
+                        font-weight: bold;
+                        background: linear-gradient(90deg, #f0f, #ff0, #0ff, #f0f);
+                        -webkit-background-clip: text;
+                        color: transparent;
+                        animation: glow 2s infinite alternate;
+                    }
+
+                    @keyframes glow {
+                        from {
+                            text-shadow: 0 0 5px #fff;
+                        }
+
+                        to {
+                            text-shadow: 0 0 20px #ff0, 0 0 30px #f0f;
+                        }
+                    }
+
+                    /* 会员列表 */
+                    .members {
+                        list-style: none;
+                        padding: 0;
+                        margin-top: 30px;
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
+
+                        .members li {
+                            font-size: 1.5rem;
+                            padding: 15px 30px;
+                            margin: 10px;
+                            background: rgba(255, 255, 255, 0.1);
+                            border-radius: 15px;
+                            backdrop-filter: blur(5px);
+                            transition: all 0.5s ease;
+                            cursor: pointer;
+                        }
+
+                            .members li:hover {
+                                transform: scale(1.1);
+                                box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+                            }
+
+                    /* 返回主页按钮 */
+                    .btn {
+                        display: inline-block;
+                        margin-top: 30px;
+                        padding: 15px 30px;
+                        font-size: 1.2rem;
+                        color: #fff;
+                        background: rgba(255, 255, 255, 0.2);
+                        border-radius: 25px;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                    }
+
+                        .btn:hover {
+                            background: rgba(255, 255, 255, 0.5);
+                            transform: scale(1.1);
+                        }
+                </style>
+            </head>
+            <body>
+
+                <!-- 星空背景 -->
+                <div class="stars"></div>
+
+                <h1>Membership of Etheria</h1>
+
+                <ul class="members">
+                    <li>WDS - The Guardian of Time</li>
+                    <li>WXY - The Stormcaller</li>
+                    <li>CHL - The Weaver of Shadows</li>
+                    <li>YJ - The Flameborn Sage</li>
+                    <li>LLX - The Celestial Wanderer</li>
+                </ul>
+
+                <a class="btn" href="/">🏠 Home</a>
+
+
+
+
+                <script src="/_framework/aspnetcore-browser-refresh.js"></script>
+            </body>
+        </html>
+
+    </main>
+</div>
+
+<footer b-9ze44yt5fo class="border-top footer text-muted">
+    <div b-9ze44yt5fo class="container">
+        &copy; 2025 - Projectwebsite - <a href="/Home/Privacy">Privacy</a>
+    </div>
+</footer>
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo"></script>
+
+
+<!-- Visual Studio Browser Link -->
+<script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="274872cb938e41d6afd4523aece58cc1" data-requestMappingFromServer="false" data-connectUrl="http://localhost:62076/41f63ede94104cc68ec27af4ee942f07/browserLink"></script>
+<!-- End Browser Link -->
+</body>
+</html>
